@@ -29,3 +29,23 @@
 # b=int(input('Greq tiv: '))
 # c=int(input('Greq tiv: '))
 # print(mijin())
+
+# 98,99  chi stacvel 
+
+# def is_prime(number):
+#     if number <= 1:
+#         return False
+#     if number == 2:
+#         return True
+#     if number % 2 == 0:
+#         return False
+#     for i in range(3, int(number ** 0.5) + 1, 2):
+#         if number % i == 0:
+#             return False
+#     return True
+# if __name__ == "__main__":
+#     number = int(input('Greq tiv: '))
+#     if is_prime(number):
+#         print(f"{number}")
+#     else:
+#         print(f"{number}")
