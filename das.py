@@ -1010,42 +1010,356 @@
 
 # print(10)
 
-def is_prime(number):
-    if number <= 1:
-            return False
-    elif number == 2:
-            return True
-    elif number % 2 == 0:
-            return False
-    for i in range(3, int(number ** 0.5) + 1, 2):
-        if number % i == 0:
-            return False
-    return True
+# def is_prime(number):
+#     if number <= 1:
+#             return False
+#     elif number == 2:
+#             return True
+#     elif number % 2 == 0:
+#             return False
+#     for i in range(3, int(number ** 0.5) + 1, 2):
+#         if number % i == 0:
+#             return False
+#     return True
 
-if __name__ == "__main__":
-    number = int(input('Greq tiv: '))
-    if is_prime(number):
-        print(number)
-    else:
-        print(number)
-print(is_prime())
-
-
-
-            
+# if __name__ == "__main__":
+#     number = int(input('Greq tiv: '))
+#     if is_prime(number):
+#         print(number)
+#     else:
+#         print(number)
+# print(is_prime())
 
 
-            
+# def jump(mylist):
+#     index = 0
+#     while True:
+#         if index == len(mylist) - 1:
+#             return True
+#         elif index >= len(mylist):
+#             return False
+#         elif mylist[index] == 0 and index != len(mylist) - 1:
+#             return False
+#         index += mylist[index]
+# print(jump([2, 1, 2, 3, 6, 1]))
+
+# def twice_as_old(dad_years_old, son_years_old):
+#     count=0
+#     if son_years_old == 0:
+#         return dad_years_old
+#     elif dad_years_old /son_years_old==0:
+#         return '0'
+#     while True:
+#         if dad_years_old/son_years_old!=0:
+#             dad_years_old=dad_years_old-1
+#             count=dad_years_old/son_years_old
+#             return count
+# print(twice_as_old(46,17))
 
 
+# import math
+# def logs(x, a, b):
+#     return math.log(a*b,x)
+# print(logs(3,17,19))
 
+# def make_upper_case(s):
+#     return s.upper()
     
+# def basic_operations(operation, value1, value2):
+#     if operation == '+':
+#         return value1 + value2
+#     elif operation == '-':
+#         return value1 - value2
+#     elif operation == '*':
+#         return value1 * value2
+#     elif operation == '/':
+#         return value1 / value2
+#     else:
+#         return "Invalid operation"
+
+# def greet(name, owner):
+#     if name==owner:
+#         return 'Hello boss'
+#     else:
+#         return 'Hello guest'
+
+# def maps(a):
+#     return [i * 2 for i in a]
+# print(maps([1,2,3]))
+        
+# def paperwork(n, m):
+#     if n>0 and m>0:
+#         return n * m
+#     elif n <= 0 or m <= 0:
+#         return 0
+
+
+# def simple_multiplication(number):
+#     if number%2==0:
+#         return number * 8
+#     elif number%2!=0:
+#         return number * 9
+
+# def other_angle(a, b):
+#     if a==0 or b==0:
+#         return 'Error'
+#     elif a>b:
+#         return 180-a-b
+#     else:
+#         return 180-b-a
+
+# def get_volume_of_cuboid(length, width, height):
+#     return length*width*height
+
+# def invert(lst):
+#     if not lst: 
+#         return []
+#     else:
+#         return [-i for i in lst]
+
+# def hero(bullets, dragons):
+#     if bullets-dragons==bullets/2 or bullets>dragons:
+#         return True
+#     else:
+#         return False
+# print(hero(211,95))
+            
+# def bmi(weight, height):
+#     bmi_value = weight / (height ** 2)
+#     if bmi_value <= 18.5:
+#         return 'Underweight'
+#     elif bmi_value <= 25:
+#         return "Normal"
+#     elif bmi_value <= 30:
+#         return "Overweight"
+#     else:
+#         return "Obese"
+
+# def repeat_str(repeat, string):
+#     return string*repeat
+
+# def first_n_smallest(mylist, n):
+#     if n > len(mylist):
+#         return "ERROR"
+#     count = []
+#     temp_list = mylist[:]
+#     for _ in range(n):
+#         min_value = min(temp_list)
+#         min_index = temp_list.index(min_value)
+#         count.append(temp_list[min_index])
+#         temp_list[min_index] = float('inf')
+#     return count
+
+
+
+# def first_n_smallest(mylist, n):
+#     if n > len(mylist):
+#         return "ERROR"
+#     count = []
+#     temp_list = mylist[:]
+#     for _ in mylist:
+#         poqr_value = min(temp_list)
+#         poqr_index = temp_list.index(poqr_value)
+#         count.append(temp_list[poqr_index])
+#     return count
+# print(first_n_smallest([0,-1]))
+
+
+# def first_n_smallest(mylist, n):
+#     if n > len(mylist):
+#         return 'ERROR'
+#     if n == 0:
+#         return []
+#     poqraguyn_arjeq = sorted(range(len(mylist)), key=lambda i: (mylist[i], i))[:n]
+#     poqraguyn_arjeq.sort()
+#     return [mylist[i] for i in poqraguyn_arjeq]
+
+# def solution(n):
+#     count=[]
+#     for i in range(1,n+1):
+#         if i==1:
+#             count.append("I")
+#             if i==2:
+#                 count.append("II")
+#                 if i==3:
+#                     count.append("III")
+#                     if i==4:
+#                         count.append("IV")
+#                         if i==5:
+#                             count.append('V')
+#                             if i==6:
+#                                 count.append('VI')
+#                                 if i==7:
+#                                     count.append("VII")
+#                                     if i==8:
+#                                         count.append("VIII")
+#                                         if i==9:
+#                                             count.append("IX")
+#     return count
+
+# print(solution(1257))
+
+# def solution(n):
+#     val = [
+#         1000, 900, 500, 400,
+#         100, 90, 50, 40,
+#         10, 9, 5, 4,
+#         1
+#     ]
+#     symbols = [
+#         "M", "CM", "D", "CD",
+#         "C", "XC", "L", "XL",
+#         "X", "IX", "V", "IV",
+#         "I"
+#     ]
+#     roman_numeral = ""
+#     for i in range(len(val)):
+#         while n >= val[i]:
+#             roman_numeral += symbols[i]
+#             n -= val[i]
+#     return roman_numeral
+
+# def factorial(n):
+#     if n == 1:
+#         return 1
+#     else:
+#         if 
+#         return n * factorial(n - 1)
+
+
+# def twice_as_old(dad_years_old, son_years_old):
+#     count=dad_years_old-2*son_years_old
+#     if count<0:
+#         return count * (-1)
+#     else:
+#         return count
+        
+# def sort_array(source_array):
+#     if len(sort_array) in source_array:
+#             pattern = source_array[len(sort_array)]
+#             return [sort_array[i] for i in pattern]
+#     else:
+#         return sort_array
+
+
+# def sort_array(source_array):
+#     patterns = {}
+#     if len(source_array) in patterns:
+#         pattern = patterns[len(source_array)]
+#         return [source_array[i] for i in pattern]
+#     else:
+#         return source_array
+
+# def find_uniq(arr):
+#     arr.sort(reverse=True)
+#     return arr[0]
+# print(find_uniq([0,0,0,20,0,0]))
+
+# def find_uniq(arr):
+#     for num in set(arr):
+#         if arr.count(num) == 1:
+#             return num
 
 
 
 
-   
+
+# def get_planet_name(id):
+#     Name = {
+#         1: "Mercury",
+#         2: "Venus",
+#         3: "Earth",
+#         4: "Mars",
+#         5: "Jupiter",
+#         6: "Saturn",
+#         7: "Uranus",
+#         8: "Neptune"
+#     }
+#     return Name.get(id)
+
+# def descending_order(num):
+#     arrai=[num]
+#     arrai.sort(reverse=True)
+#     return arrai
+# print(descending_order([1,4,3,6,7,5]))
 
 
 
+# def descending_order(num):
+#     sorted_digits = sorted(str(num), reverse=True)
+#     return int("".join(sorted_digits))
 
+# def square_sum(numbers):
+#     count=0
+#     for i in numbers:
+#         count+=i
+#     return count
+
+
+# def count_sheeps(sheep):
+#     return sum(sheep)
+# sheep_array = [True,  True,  False, True,  False, True,  True,  False, True,  False, False]
+
+# def greet(name):
+#     return f"Hello, {name} how are you doing today?"
+
+# def lovefunc( flower1, flower2 ):
+#     if flower1%2==0 and flower2%2==0:
+#         return True
+#     else:
+#         return False
+# print(lovefunc(118, 949))
+
+# def to_camel_case(text):
+#     words = text.replace('-', '_').split('_')
+#     camel_case = words[0] + ''.join(word.capitalize() for word in words[1:])
+#     return camel_case
+
+# def string_to_number(s):
+#     return int(s)
+# def boolean_to_string(b):
+#     return str(b)
+# def opposite(number):
+#     return number * (-1)
+# def summation(num):
+#     summ = 0
+#     for count in range(1, num + 1):
+#         summ += count
+#     return summ
+
+
+# def pig_it(text):
+#     words = text.split()
+#     result = []
+#     for word in words:
+#         if word.isalpha():
+#             popoxvac_word= word[1:] + word[0] + 'ay'
+#             result.append(popoxvac_word)
+#         else:
+#             result.append(word)
+#     return ' '.join(result)
+# pig_it('Pig latin is cool'), pig_it('Hello world !')
+
+
+# def tareri_qanak(mylist):
+#     count_A = 0
+#     count_B = 0
+#     if mylist == []:
+#         return []
+#     else:
+#         for item in mylist:
+#             if item == 'A':
+#                 count_A += 1
+#             elif item == 'B':
+#                 count_B += 1
+#     return f'A={count_A},B={count_B}'
+# print(tareri_qanak(["A", "A", "A", "A", "A", "A", "A", "A", "A", "A", "A", "A", "B", "B", "B", "B", "A", "A", "A", "A", "A", "A", "B"]))
+
+
+# def gumar(n1,n2,n3,n4):
+#     if n1+n2+n3+n4==68:
+#         return 'Lucvav'
+#     else:
+#         return n4+n4+n3+n2+n1+n1+n1
+# print(gumar(1,5,10,25))
+    
