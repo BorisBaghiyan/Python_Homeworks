@@ -1363,3 +1363,100 @@
 #         return n4+n4+n3+n2+n1+n1+n1
 # print(gumar(1,5,10,25))
     
+# def find_outlier(integers):
+#     for i in integers:
+#         if i%2!=0:
+#             return i
+#     else:
+#         return i
+# print(find_outlier([6,5,3,1,5,7,4,36,2,5,345]))
+
+
+
+
+# def persistence(n):
+#     n=str(n)
+#     count=0
+#     if int(n)<10:
+#         return 0
+#     else:
+#         for _ in n:
+#             count-=int(n[0])*int(n[1:])
+#         if count<=9:
+#             return count
+# print(persistence(39))
+
+
+
+# file=open('myfile.txt','a')
+# file.write('\nbayc ahabor hognac em')
+
+# def head(file):
+#     try:
+#         with open('myfile.txt','r') as newfile:
+#             print(newfile.read())
+#     except:
+#         with open('myfile.txt','r') as newfile1:
+#             x=newfile1.readlines()[:10]
+#         x=''.join()
+#         with open('newfile.txt','w') as newfile2:
+#             newfile2.write(x)
+#             print(newfile2)
+# head(input('Greq File anun: '))
+
+# with open('myfile.txt','r')as file1:
+#     mylist=file1.readlines()
+# with open('new_myfile.txt','a')as file2:
+#     for i in range(len(mylist)):
+#         file2.write(f'{i+1}.{mylist[i]}')
+
+# with open('myfile.txt','r') as file:
+#     f=file.readlines()
+# for i in range(1):
+#     print(max(f))
+# def files(filename):
+#     try:
+#         with open('myfile.txt','r') as file:
+#             f=file.read().replace('\n',' ').split(' ')
+#         for i in range(len(f)):
+#             mydict={i:f.count(i) for i in f}
+#         print(sorted(mydict, key=mydict.get)[-1])
+#     except:
+#         print('Error')
+# files(input('greq file anun: '))
+
+
+# with open('myfile.txt','r')as file:
+#     x=file.read().replace('\n',' ').split(' ')
+#     x.sort()
+#     print(x)
+
+
+# filename = input("greq file anun: ")
+# toxeri_count = {}
+# with open(filename, 'r') as file:
+#     for i in file:
+#         i = i.strip()
+#         if i in toxeri_count:
+#             toxeri_count[i] += 1
+#         else:
+#             toxeri_count[i] = 1
+# if toxeri_count:
+#     for i in toxeri_count:
+#         for j in toxeri_count:
+#             print(f"{i}: {j}")
+# else:
+#     print("Error")
+
+
+# def count_occurrences(character, string):
+#     count = 0
+#     for char in string:
+#         if char == character:
+#             count += 1
+            
+#     return count
+# print(count_occurrences('o','hello Word'))
+
+
+
