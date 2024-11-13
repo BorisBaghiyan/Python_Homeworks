@@ -1460,3 +1460,97 @@
 
 
 
+# def even_or_odd(number):
+#     if number%2==0:
+#         return 'Even'
+#     else:
+#         return 'Odd'
+
+# def make_negative( number ):
+#     if number > 0:
+#         return number * (-1)
+#     elif number == 0 :
+#         return 0
+#     else:
+#         return number
+
+# def is_triangle(a, b, c):
+    # return a + b > c and a + c > b and b + c > a
+
+# def square_digits(num):
+#     count = []
+#     for i in str(num):  
+#         count.append(int(i) ** 2)
+#     return int(''.join(map(str, count)))
+
+
+
+# def get_sum(a, b):
+#     if a == b:
+#         return a
+#     else:
+#         min_val, max_val = min(a, b), max(a, b)
+#         return (max_val - min_val + 1) * (min_val + max_val) // 2
+
+# def can_reach_exit(maze):
+#     N = len(maze)
+#     target = (N - 1, N - 1)
+#     visited = set()
+    
+#     def dfs(x, y):
+#         # Base cases
+#         if (x, y) == target:
+#             return True
+#         if x < 0 or y < 0 or x >= N or y >= N or maze[x][y] == 'W' or (x, y) in visited:
+#             return False
+        
+#         # Mark the current cell as visited
+#         visited.add((x, y))
+        
+#         # Explore all four directions
+#         return (dfs(x + 1, y) or  # South
+#                 dfs(x - 1, y) or  # North
+#                 dfs(x, y + 1) or  # East
+#                 dfs(x, y - 1))    # West
+    
+#     # Start DFS from the initial position
+#     return True
+
+# # Example test case
+# maze = [
+#     ['.', '.', '.', 'W'],
+#     ['W', 'W', '.', 'W'],
+#     ['.', '.', '.', '.'],
+#     ['W', 'W', 'W', '.']
+# ]
+# print(can_reach_exit(maze))  # Expected output: True
+
+
+
+
+# def count_trailing_zeros(n):
+#     count = 0
+#     power_of_5 = 5
+#     while n >= power_of_5:
+#         count += n // power_of_5
+#         power_of_5 *= 5
+#     return count
+
+# def last_digit(n1, n2):
+#     listik=[]
+#     listik.append(n1**n2)
+# print(last_digit(4,2))
+
+
+# def last_digit(n1, n2):
+#     return pow( n1, n2, 10 )
+
+
+# def is_divisible(n,x,y):
+#     return x*y==n
+# print(is_divisible(60,4,5))
+
+
+
+
+
